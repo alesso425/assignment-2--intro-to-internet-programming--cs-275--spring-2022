@@ -73,7 +73,7 @@ let transpileJSForDev = () => {
 let compressHTML = () => {
     return src(`html/*.html`)
         .pipe(htmlCompressor({collapseWhitespace: true}))
-        .pipe(dest(`prod/html`));
+        .pipe(dest(`prod`));
 };
 
 let compileCSSForProd = () => {
@@ -111,8 +111,7 @@ let serve = () => {
             baseDir: [
                 `temp`,
                 `html`,
-                `css`,
-                `js`
+                `.`
             ]
         }
     });
