@@ -27,12 +27,8 @@ main {
 
 p {
   font-weight: 400;
-  padding-top: 2px;
-  padding-left: 2px;
-  padding-bottom: 2px;
-  padding-right: 2px;
+  padding: 2px;
 }
-
 
 button {
   color: hsla(38, 100%, 70%, 1);
